@@ -15,20 +15,10 @@ ProductTag.init(
       autoIncrement: true
     },
     product_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: Product,
-        key: "id",
-        onDelete: "SET NULL"
-      }
+      type: DataTypes.INTEGER
     },
     tag_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: Tag,
-        key: "id",
-        onDelete: "SET NULL"
-      }
+      type: DataTypes.INTEGER
     }
   },
   {
