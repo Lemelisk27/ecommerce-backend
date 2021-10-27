@@ -33,6 +33,9 @@ router.get('/:id', (req, res) => {
     else {
       res.status(404).json({message:"No Tag Found"})
     }
+  }).catch((err)=>{
+    console.log(err)
+    res.status(500).json({message:"An Error Occured",err:err})
   })
 });
 
